@@ -6,9 +6,9 @@ import javax.swing.JOptionPane;
 
 public class Conexion {
     Connection con = null;
-    String url = "jdbc:postgresql://localhost/prueba";
+    String url = "jdbc:postgresql://localhost:5432/prueba";
     String usuario = "postgres";
-    String Clave = "123456";
+    String Clave = "1234";
     
     
     public Connection conectar(){
