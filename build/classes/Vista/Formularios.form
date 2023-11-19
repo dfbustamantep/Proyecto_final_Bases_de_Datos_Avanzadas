@@ -77,6 +77,9 @@
           <Font name="Segoe UI" size="12" style="1"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTabbedPane1MouseClicked"/>
+      </Events>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
       <SubComponents>
@@ -474,11 +477,11 @@
                                   </Group>
                                   <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="txtFechaNaEM" alignment="1" min="-2" pref="162" max="-2" attributes="0"/>
-                                      <Component id="txtFechaInEM" alignment="1" min="-2" pref="162" max="-2" attributes="0"/>
-                                      <Component id="txtCodEm" alignment="1" min="-2" pref="162" max="-2" attributes="0"/>
-                                      <Component id="txtDocEm" alignment="1" min="-2" pref="162" max="-2" attributes="0"/>
-                                      <Component id="txtNombreEm" alignment="1" min="-2" pref="162" max="-2" attributes="0"/>
+                                      <Component id="txtFechaNacimientoEmpleado" alignment="1" min="-2" pref="162" max="-2" attributes="0"/>
+                                      <Component id="txtFechaIngresoEmpleado" alignment="1" min="-2" pref="162" max="-2" attributes="0"/>
+                                      <Component id="txtCodigoEmpleado" alignment="1" min="-2" pref="162" max="-2" attributes="0"/>
+                                      <Component id="txtDocumentoEmpleado" alignment="1" min="-2" pref="162" max="-2" attributes="0"/>
+                                      <Component id="txtNombreEmpleado" alignment="1" min="-2" pref="162" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -489,8 +492,8 @@
                                   </Group>
                                   <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="txtFechaSaEm" alignment="1" min="-2" pref="162" max="-2" attributes="0"/>
-                                      <Component id="txtSalario" alignment="1" min="-2" pref="162" max="-2" attributes="0"/>
+                                      <Component id="txtFechaSalidaEmpleado" alignment="1" min="-2" pref="162" max="-2" attributes="0"/>
+                                      <Component id="txtSalarioEmpleado" alignment="1" min="-2" pref="162" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -513,37 +516,37 @@
                           <EmptySpace pref="18" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblDocumentoEm" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                              <Component id="txtDocEm" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtDocumentoEmpleado" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblCodigoEm" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                              <Component id="txtCodEm" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtCodigoEmpleado" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblnombreEm" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                              <Component id="txtNombreEm" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtNombreEmpleado" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblFechaNaEm" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                              <Component id="txtFechaNaEM" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtFechaNacimientoEmpleado" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblFechaInEM" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                              <Component id="txtFechaInEM" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtFechaIngresoEmpleado" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblFechaSaEm" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                              <Component id="txtFechaSaEm" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtFechaSalidaEmpleado" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblSalario" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                              <Component id="txtSalario" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtSalarioEmpleado" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -574,7 +577,7 @@
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtCodEm">
+                <Component class="javax.swing.JTextField" name="txtCodigoEmpleado">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -652,7 +655,7 @@
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtDocEm">
+                <Component class="javax.swing.JTextField" name="txtDocumentoEmpleado">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -662,10 +665,10 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtDocEmActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtDocumentoEmpleadoActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtNombreEm">
+                <Component class="javax.swing.JTextField" name="txtNombreEmpleado">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -675,10 +678,10 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombreEmActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombreEmpleadoActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtFechaNaEM">
+                <Component class="javax.swing.JTextField" name="txtFechaNacimientoEmpleado">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -688,10 +691,10 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFechaNaEMActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFechaNacimientoEmpleadoActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtFechaInEM">
+                <Component class="javax.swing.JTextField" name="txtFechaIngresoEmpleado">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -701,7 +704,7 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFechaInEMActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFechaIngresoEmpleadoActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JButton" name="btnGuardarEmpleado">
@@ -726,7 +729,7 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarEmpleadoActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtSalario">
+                <Component class="javax.swing.JTextField" name="txtSalarioEmpleado">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -736,7 +739,7 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSalarioActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSalarioEmpleadoActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblSalario">
@@ -773,7 +776,7 @@
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtFechaSaEm">
+                <Component class="javax.swing.JTextField" name="txtFechaSalidaEmpleado">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -783,7 +786,7 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFechaSaEmActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFechaSalidaEmpleadoActionPerformed"/>
                   </Events>
                 </Component>
                 <Container class="javax.swing.JPanel" name="jPanel9">

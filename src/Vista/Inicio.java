@@ -26,7 +26,7 @@ public class Inicio extends javax.swing.JFrame {
         
         StringBuilder informacion = new StringBuilder();
                 informacion.append("El concesionario BUENAUTO es un concesionario creado por colombianos con una gran trayectoria,").append("\n");
-                informacion.append("fundados en el año de 1980 por Jose Quintero ,Heider Leyton y Daniel Bustamante.El concesionario ").append("\n");
+                informacion.append("fundados en el año de 1980 por Jose Quintero, Heider Leyton y Daniel Bustamante. El concesionario ").append("\n");
                 informacion.append("comenzo con una sede en Medellin y hoy cuenta con sedes en las diferentes ciudades de Colombia.").append("\n");
                 //informacion.append("").append("\n");
                 
@@ -39,99 +39,7 @@ CRUDSQL objcrud = new CRUDSQL();
     
 
     @SuppressWarnings("unchecked")
-   /*private void iniciarComponentes(){
-        jInternalFrame1 = new javax.swing.JInternalFrame();
-        jTextField3 = new javax.swing.JTextField();
-        jPanel16 = new javax.swing.JPanel();
-        jPanel1 = new javax.swing.JPanel();
-        
-        btnRegistro = new javax.swing.JButton();
-        JTextArea jTextArea1 = new javax.swing.JTextArea();
-        
-        jTextArea1.setText("El concesionario BUENAUTO es un concesionario creado por colombianos con una gran trayectoria, "
-                + "fundados en el año de 1980 por Jose David Quintero Guerrero, Heider Sait Leyton Montiel y Daniel Felipe Bustamante Pérez. "
-                + "El concesionario comenzó con una sede en Medellín y hoy cuenta con sedes en las diferentes ciudades de Colombia.");
-        jTextArea1.setEditable(false);
-        
-        // Añadir el JTextArea al JPanel
-        jPanel1.add(jTextArea1);
-        //jPanel1.setVisible(true);
-        jInternalFrame1.setVisible(true);
-
-        javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
-        jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
-        jInternalFrame1Layout.setHorizontalGroup(
-            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jInternalFrame1Layout.setVerticalGroup(
-            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
-            }
-        });
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jPanel16.setBackground(new java.awt.Color(91, 233, 168));
-        jPanel16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel1.setBackground(new java.awt.Color(61, 225, 143));
-
-        jLabelFecha.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabelFecha.setForeground(new java.awt.Color(0, 0, 0));
-        jLabelFecha.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelFecha.setText("BUENAUTO");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(188, 188, 188)
-                .addComponent(jLabelFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(214, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jLabelFecha)
-                .addContainerGap(23, Short.MAX_VALUE))
-        );
-
-        jPanel16.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 80));
-
-        btnRegistro.setBackground(new java.awt.Color(61, 225, 143));
-        btnRegistro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnRegistro.setForeground(new java.awt.Color(0, 0, 0));
-        btnRegistro.setText("Realizar registro");
-        btnRegistro.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        btnRegistro.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRegistroActionPerformed(evt);
-            }
-        });
-        jPanel16.add(btnRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 430, 120, 50));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        pack();
-    }
-   */
+   
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 

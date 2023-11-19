@@ -12,13 +12,13 @@ import javax.swing.JOptionPane;
  * @author Josed
  */
 public class Formularios extends javax.swing.JFrame {
+
     CRUDSQL objcrud = new CRUDSQL();
-    
+
     public Formularios() {
         initComponents();
     }
-    
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -43,20 +43,20 @@ public class Formularios extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         lblDocumentoEm = new javax.swing.JLabel();
-        txtCodEm = new javax.swing.JTextField();
+        txtCodigoEmpleado = new javax.swing.JTextField();
         lblCodigoEm = new javax.swing.JLabel();
         lblnombreEm = new javax.swing.JLabel();
         lblFechaInEM = new javax.swing.JLabel();
         lblFechaNaEm = new javax.swing.JLabel();
-        txtDocEm = new javax.swing.JTextField();
-        txtNombreEm = new javax.swing.JTextField();
-        txtFechaNaEM = new javax.swing.JTextField();
-        txtFechaInEM = new javax.swing.JTextField();
+        txtDocumentoEmpleado = new javax.swing.JTextField();
+        txtNombreEmpleado = new javax.swing.JTextField();
+        txtFechaNacimientoEmpleado = new javax.swing.JTextField();
+        txtFechaIngresoEmpleado = new javax.swing.JTextField();
         btnGuardarEmpleado = new javax.swing.JButton();
-        txtSalario = new javax.swing.JTextField();
+        txtSalarioEmpleado = new javax.swing.JTextField();
         lblSalario = new javax.swing.JLabel();
         lblFechaSaEm = new javax.swing.JLabel();
-        txtFechaSaEm = new javax.swing.JTextField();
+        txtFechaSalidaEmpleado = new javax.swing.JTextField();
         jPanel9 = new javax.swing.JPanel();
         jLabelSalir3 = new javax.swing.JLabel();
         btnInicioEmpleado = new javax.swing.JButton();
@@ -132,6 +132,11 @@ public class Formularios extends javax.swing.JFrame {
         jTabbedPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTabbedPane1.setForeground(new java.awt.Color(0, 0, 0));
         jTabbedPane1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jTabbedPane1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTabbedPane1MouseClicked(evt);
+            }
+        });
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -323,8 +328,8 @@ public class Formularios extends javax.swing.JFrame {
         lblDocumentoEm.setText("Documento");
         lblDocumentoEm.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        txtCodEm.setBackground(new java.awt.Color(255, 255, 255));
-        txtCodEm.setForeground(new java.awt.Color(0, 0, 0));
+        txtCodigoEmpleado.setBackground(new java.awt.Color(255, 255, 255));
+        txtCodigoEmpleado.setForeground(new java.awt.Color(0, 0, 0));
 
         lblCodigoEm.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblCodigoEm.setForeground(new java.awt.Color(0, 0, 0));
@@ -350,35 +355,35 @@ public class Formularios extends javax.swing.JFrame {
         lblFechaNaEm.setText("Fecha de nacimiento");
         lblFechaNaEm.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        txtDocEm.setBackground(new java.awt.Color(255, 255, 255));
-        txtDocEm.setForeground(new java.awt.Color(0, 0, 0));
-        txtDocEm.addActionListener(new java.awt.event.ActionListener() {
+        txtDocumentoEmpleado.setBackground(new java.awt.Color(255, 255, 255));
+        txtDocumentoEmpleado.setForeground(new java.awt.Color(0, 0, 0));
+        txtDocumentoEmpleado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtDocEmActionPerformed(evt);
+                txtDocumentoEmpleadoActionPerformed(evt);
             }
         });
 
-        txtNombreEm.setBackground(new java.awt.Color(255, 255, 255));
-        txtNombreEm.setForeground(new java.awt.Color(0, 0, 0));
-        txtNombreEm.addActionListener(new java.awt.event.ActionListener() {
+        txtNombreEmpleado.setBackground(new java.awt.Color(255, 255, 255));
+        txtNombreEmpleado.setForeground(new java.awt.Color(0, 0, 0));
+        txtNombreEmpleado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNombreEmActionPerformed(evt);
+                txtNombreEmpleadoActionPerformed(evt);
             }
         });
 
-        txtFechaNaEM.setBackground(new java.awt.Color(255, 255, 255));
-        txtFechaNaEM.setForeground(new java.awt.Color(0, 0, 0));
-        txtFechaNaEM.addActionListener(new java.awt.event.ActionListener() {
+        txtFechaNacimientoEmpleado.setBackground(new java.awt.Color(255, 255, 255));
+        txtFechaNacimientoEmpleado.setForeground(new java.awt.Color(0, 0, 0));
+        txtFechaNacimientoEmpleado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFechaNaEMActionPerformed(evt);
+                txtFechaNacimientoEmpleadoActionPerformed(evt);
             }
         });
 
-        txtFechaInEM.setBackground(new java.awt.Color(255, 255, 255));
-        txtFechaInEM.setForeground(new java.awt.Color(0, 0, 0));
-        txtFechaInEM.addActionListener(new java.awt.event.ActionListener() {
+        txtFechaIngresoEmpleado.setBackground(new java.awt.Color(255, 255, 255));
+        txtFechaIngresoEmpleado.setForeground(new java.awt.Color(0, 0, 0));
+        txtFechaIngresoEmpleado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFechaInEMActionPerformed(evt);
+                txtFechaIngresoEmpleadoActionPerformed(evt);
             }
         });
 
@@ -393,11 +398,11 @@ public class Formularios extends javax.swing.JFrame {
             }
         });
 
-        txtSalario.setBackground(new java.awt.Color(255, 255, 255));
-        txtSalario.setForeground(new java.awt.Color(0, 0, 0));
-        txtSalario.addActionListener(new java.awt.event.ActionListener() {
+        txtSalarioEmpleado.setBackground(new java.awt.Color(255, 255, 255));
+        txtSalarioEmpleado.setForeground(new java.awt.Color(0, 0, 0));
+        txtSalarioEmpleado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtSalarioActionPerformed(evt);
+                txtSalarioEmpleadoActionPerformed(evt);
             }
         });
 
@@ -413,11 +418,11 @@ public class Formularios extends javax.swing.JFrame {
         lblFechaSaEm.setText("Fecha de salida");
         lblFechaSaEm.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        txtFechaSaEm.setBackground(new java.awt.Color(255, 255, 255));
-        txtFechaSaEm.setForeground(new java.awt.Color(0, 0, 0));
-        txtFechaSaEm.addActionListener(new java.awt.event.ActionListener() {
+        txtFechaSalidaEmpleado.setBackground(new java.awt.Color(255, 255, 255));
+        txtFechaSalidaEmpleado.setForeground(new java.awt.Color(0, 0, 0));
+        txtFechaSalidaEmpleado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFechaSaEmActionPerformed(evt);
+                txtFechaSalidaEmpleadoActionPerformed(evt);
             }
         });
 
@@ -487,11 +492,11 @@ public class Formularios extends javax.swing.JFrame {
                             .addComponent(lblDocumentoEm, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(40, 40, 40)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(txtFechaNaEM, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtFechaInEM, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtCodEm, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtDocEm, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtNombreEm, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtFechaNacimientoEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtFechaIngresoEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtCodigoEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtDocumentoEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtNombreEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(115, 115, 115)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -499,8 +504,8 @@ public class Formularios extends javax.swing.JFrame {
                             .addComponent(lblFechaSaEm, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(40, 40, 40)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(txtFechaSaEm, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtSalario, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtFechaSalidaEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtSalarioEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(113, 113, 113)
                         .addComponent(btnInicioEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -517,31 +522,31 @@ public class Formularios extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblDocumentoEm, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtDocEm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtDocumentoEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCodigoEm, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtCodEm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtCodigoEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblnombreEm, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtNombreEm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtNombreEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblFechaNaEm, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtFechaNaEM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtFechaNacimientoEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblFechaInEM, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtFechaInEM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtFechaIngresoEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblFechaSaEm, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtFechaSaEm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtFechaSalidaEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblSalario, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtSalario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtSalarioEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnInicioEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1153,48 +1158,48 @@ public class Formularios extends javax.swing.JFrame {
 
     private void BtnGuardarSsucursalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGuardarSsucursalActionPerformed
         objcrud.insertarSucursal(txtIDsucursal.getText(), txtNombresu.getText());
-        
+
         txtIDsucursal.setText("");
         txtNombresu.setText("");
     }//GEN-LAST:event_BtnGuardarSsucursalActionPerformed
 
-    private void txtDocEmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDocEmActionPerformed
+    private void txtDocumentoEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDocumentoEmpleadoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtDocEmActionPerformed
+    }//GEN-LAST:event_txtDocumentoEmpleadoActionPerformed
 
-    private void txtNombreEmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreEmActionPerformed
+    private void txtNombreEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreEmpleadoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNombreEmActionPerformed
+    }//GEN-LAST:event_txtNombreEmpleadoActionPerformed
 
-    private void txtFechaNaEMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaNaEMActionPerformed
+    private void txtFechaNacimientoEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaNacimientoEmpleadoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtFechaNaEMActionPerformed
+    }//GEN-LAST:event_txtFechaNacimientoEmpleadoActionPerformed
 
-    private void txtFechaInEMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaInEMActionPerformed
+    private void txtFechaIngresoEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaIngresoEmpleadoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtFechaInEMActionPerformed
+    }//GEN-LAST:event_txtFechaIngresoEmpleadoActionPerformed
 
     private void btnGuardarEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarEmpleadoActionPerformed
-        objcrud.insertarEmpleado(txtDocEm.getText(), txtCodEm.getText(), txtNombreEm.getText(), txtFechaNaEM.getText(), txtFechaInEM.getText(), txtFechaSaEm.getText(), txtSalario.getText());
-        
-        txtCodEm.setText("");
-        txtDocEm.setText("");
-        txtNombreEm.setText("");
-        txtFechaNaEM.setText("");
-        txtFechaInEM.setText("");
-        txtFechaSaEm.setText("");
-        txtSalario.setText("");
-        
-        
+        objcrud.insertarEmpleado(txtDocumentoEmpleado.getText(), txtCodigoEmpleado.getText(), txtNombreEmpleado.getText(), txtFechaNacimientoEmpleado.getText(), txtFechaIngresoEmpleado.getText(), txtFechaSalidaEmpleado.getText(), txtSalarioEmpleado.getText());
+
+        txtCodigoEmpleado.setText("");
+        txtDocumentoEmpleado.setText("");
+        txtNombreEmpleado.setText("");
+        txtFechaNacimientoEmpleado.setText("");
+        txtFechaIngresoEmpleado.setText("");
+        txtFechaSalidaEmpleado.setText("");
+        txtSalarioEmpleado.setText("");
+
+
     }//GEN-LAST:event_btnGuardarEmpleadoActionPerformed
 
-    private void txtSalarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSalarioActionPerformed
+    private void txtSalarioEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSalarioEmpleadoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtSalarioActionPerformed
+    }//GEN-LAST:event_txtSalarioEmpleadoActionPerformed
 
-    private void txtFechaSaEmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaSaEmActionPerformed
+    private void txtFechaSalidaEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaSalidaEmpleadoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtFechaSaEmActionPerformed
+    }//GEN-LAST:event_txtFechaSalidaEmpleadoActionPerformed
 
     private void txtDocumentoClActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDocumentoClActionPerformed
         // TODO add your handling code here:
@@ -1209,12 +1214,13 @@ public class Formularios extends javax.swing.JFrame {
     }//GEN-LAST:event_txtFechaInClActionPerformed
 
     private void btnGuardarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarClienteActionPerformed
+
         objcrud.insertarCleinte(txtDocumentoCl.getText(), txtNombreCl.getText(), txtFechaInCl.getText());
-        
+
         txtDocumentoCl.setText("");
         txtNombreCl.setText("");
         txtFechaInCl.setText("");
-        
+
     }//GEN-LAST:event_btnGuardarClienteActionPerformed
 
     private void txtIDventaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIDventaActionPerformed
@@ -1226,12 +1232,12 @@ public class Formularios extends javax.swing.JFrame {
     }//GEN-LAST:event_txtCantidadActionPerformed
 
     private void btnGuardarVentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarVentActionPerformed
-        objcrud.insertarVenta(txtIDventa.getText(),txtIFechaVenta.getText(), txtCantidad.getText());
-        
+        objcrud.insertarVenta(txtIDventa.getText(), txtIFechaVenta.getText(), txtCantidad.getText());
+
         txtCantidad.setText("");
         txtIFechaVenta.setText("");
         txtIDventa.setText("");
-        
+
     }//GEN-LAST:event_btnGuardarVentActionPerformed
 
     private void txtNumChaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumChaActionPerformed
@@ -1256,23 +1262,19 @@ public class Formularios extends javax.swing.JFrame {
 
     private void BtnGuardarAutomtorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGuardarAutomtorActionPerformed
         objcrud.insertarAutomotr(txtNumCha.getText(), txtPrecio.getText(), txtPlaca.getText(), txtIDinterno.getText(), txtFechaENAu.getText(), txtFechaSaAu.getText());
-        
+
         txtNumCha.setText("");
         txtPrecio.setText("");
         txtPlaca.setText("");
         txtIDinterno.setText("");
         txtFechaENAu.setText("");
         txtFechaSaAu.setText("");
-        
+
     }//GEN-LAST:event_BtnGuardarAutomtorActionPerformed
 
     private void btnEditarVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarVentaActionPerformed
-        mostrar objsiguiente = new mostrar();
-        
-        objsiguiente.setVisible(true);
-        objsiguiente.setLocationRelativeTo(null);
-        this.setVisible(false);
-        
+
+
     }//GEN-LAST:event_btnEditarVentaActionPerformed
 
     private void btnInicioVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicioVentaActionPerformed
@@ -1312,7 +1314,11 @@ public class Formularios extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnInicioSuscursalActionPerformed
 
     private void BtnEditarSucrusalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEditarSucrusalActionPerformed
-        // TODO add your handling code here:
+        editarSucursal objsiguiente = new editarSucursal();
+
+        objsiguiente.setVisible(true);
+        objsiguiente.setLocationRelativeTo(null);
+        this.setVisible(false);
     }//GEN-LAST:event_BtnEditarSucrusalActionPerformed
 
     private void txtIFechaVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIFechaVentaActionPerformed
@@ -1320,29 +1326,37 @@ public class Formularios extends javax.swing.JFrame {
     }//GEN-LAST:event_txtIFechaVentaActionPerformed
 
     private void jLabelSalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelSalirMouseClicked
-        JOptionPane.showMessageDialog(null,"Gracias por usar nuestro sistema\nTenga un buen día");
+        JOptionPane.showMessageDialog(null, "Gracias por usar nuestro sistema\nTenga un buen día");
         System.exit(0);
     }//GEN-LAST:event_jLabelSalirMouseClicked
 
     private void jLabelSalir1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelSalir1MouseClicked
-        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Gracias por usar nuestro sistema\nTenga un buen día");
+        System.exit(0);
     }//GEN-LAST:event_jLabelSalir1MouseClicked
 
     private void jLabelSalir2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelSalir2MouseClicked
-        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Gracias por usar nuestro sistema\nTenga un buen día");
+        System.exit(0);
     }//GEN-LAST:event_jLabelSalir2MouseClicked
 
     private void jLabelSalir3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelSalir3MouseClicked
-        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Gracias por usar nuestro sistema\nTenga un buen día");
+        System.exit(0);
     }//GEN-LAST:event_jLabelSalir3MouseClicked
 
     private void jLabelSalir4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelSalir4MouseClicked
-        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Gracias por usar nuestro sistema\nTenga un buen día");
+        System.exit(0);
     }//GEN-LAST:event_jLabelSalir4MouseClicked
-
     
+    private void jTabbedPane1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTabbedPane1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTabbedPane1MouseClicked
+
+
     public static void main(String args[]) {
-       
+
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Formularios().setVisible(true);
@@ -1412,25 +1426,25 @@ public class Formularios extends javax.swing.JFrame {
     private javax.swing.JLabel lblnombreEm;
     private javax.swing.JLabel lblnombreEm1;
     private javax.swing.JTextField txtCantidad;
-    private javax.swing.JTextField txtCodEm;
-    private javax.swing.JTextField txtDocEm;
+    private javax.swing.JTextField txtCodigoEmpleado;
     private javax.swing.JTextField txtDocumentoCl;
+    private javax.swing.JTextField txtDocumentoEmpleado;
     private javax.swing.JTextField txtFechaENAu;
     private javax.swing.JTextField txtFechaInCl;
-    private javax.swing.JTextField txtFechaInEM;
-    private javax.swing.JTextField txtFechaNaEM;
+    private javax.swing.JTextField txtFechaIngresoEmpleado;
+    private javax.swing.JTextField txtFechaNacimientoEmpleado;
     private javax.swing.JTextField txtFechaSaAu;
-    private javax.swing.JTextField txtFechaSaEm;
+    private javax.swing.JTextField txtFechaSalidaEmpleado;
     private javax.swing.JTextField txtIDinterno;
     private javax.swing.JTextField txtIDsucursal;
     private javax.swing.JTextField txtIDventa;
     private javax.swing.JTextField txtIFechaVenta;
     private javax.swing.JTextField txtNombreCl;
-    private javax.swing.JTextField txtNombreEm;
+    private javax.swing.JTextField txtNombreEmpleado;
     private javax.swing.JTextField txtNombresu;
     private javax.swing.JTextField txtNumCha;
     private javax.swing.JTextField txtPlaca;
     private javax.swing.JTextField txtPrecio;
-    private javax.swing.JTextField txtSalario;
+    private javax.swing.JTextField txtSalarioEmpleado;
     // End of variables declaration//GEN-END:variables
 }

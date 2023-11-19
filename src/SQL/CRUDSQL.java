@@ -1,9 +1,11 @@
 
 package SQL;
 import GEtset.variables;
+import java.awt.HeadlessException;
 import java.sql.Connection;
 import javax.swing.JOptionPane;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class CRUDSQL extends Conexion {
     
@@ -20,7 +22,7 @@ public class CRUDSQL extends Conexion {
             st.close();
             conexion.close();
             JOptionPane.showMessageDialog(null,"El registo se guardo correctamente","mensaje",JOptionPane.INFORMATION_MESSAGE);
-        } catch (Exception e) {
+        } catch (HeadlessException | SQLException e) {
             JOptionPane.showMessageDialog(null,"El registo no se ha podido guardar de manera exitosa","mensaje",JOptionPane.ERROR_MESSAGE);
         }   
     }
@@ -34,7 +36,7 @@ public class CRUDSQL extends Conexion {
             st.close();
             conexion.close();
             JOptionPane.showMessageDialog(null,"El registo se guardo correctamente","mensaje",JOptionPane.INFORMATION_MESSAGE);
-        } catch (Exception e) {
+        } catch (HeadlessException | SQLException e) {
             JOptionPane.showMessageDialog(null,"El registo no se ha podido guardar de manera exitosa","mensaje",JOptionPane.ERROR_MESSAGE);
         }   
     }
@@ -48,7 +50,7 @@ public class CRUDSQL extends Conexion {
             st.close();
             conexion.close();
             JOptionPane.showMessageDialog(null,"El registo se guardo correctamente","mensaje",JOptionPane.INFORMATION_MESSAGE);
-        } catch (Exception e) {
+        } catch (HeadlessException | SQLException e) {
             JOptionPane.showMessageDialog(null,"El registo no se ha podido guardar de manera exitosa","mensaje",JOptionPane.ERROR_MESSAGE);
         }   
     }
@@ -62,7 +64,7 @@ public class CRUDSQL extends Conexion {
             st.close();
             conexion.close();
             JOptionPane.showMessageDialog(null,"El registo se guardo correctamente","mensaje",JOptionPane.INFORMATION_MESSAGE);
-        } catch (Exception e) {
+        } catch (HeadlessException | SQLException e) {
             JOptionPane.showMessageDialog(null,"El registo no se ha podido guardar de manera exitosa","mensaje",JOptionPane.ERROR_MESSAGE);
         }   
     }
@@ -77,7 +79,7 @@ public class CRUDSQL extends Conexion {
             st.close();
             conexion.close();
             JOptionPane.showMessageDialog(null,"El registo se guardo correctamente","mensaje",JOptionPane.INFORMATION_MESSAGE);
-        } catch (Exception e) {
+        } catch (HeadlessException | SQLException e) {
             JOptionPane.showMessageDialog(null,"El registo no se ha podido guardar de manera exitosa","mensaje",JOptionPane.ERROR_MESSAGE);
         }   
     }
@@ -101,7 +103,7 @@ public class CRUDSQL extends Conexion {
         }
            st.close();
            conexion.close();
-        } catch (Exception e) {
+        } catch (HeadlessException | SQLException e) {
              JOptionPane.showMessageDialog(null,"Error en el sistema de busqueda","Error busqueda",JOptionPane.ERROR_MESSAGE);
         }
     }
@@ -115,7 +117,7 @@ public class CRUDSQL extends Conexion {
             st.close();
             conexion.close();
             JOptionPane.showMessageDialog(null,"El registro se actualizo de manera exitosa", "exito",JOptionPane.INFORMATION_MESSAGE );
-        } catch (Exception e) {
+        } catch (HeadlessException | SQLException e) {
             JOptionPane.showMessageDialog(null,"Error al actualizar","Error",JOptionPane.ERROR_MESSAGE);
         }
     }
@@ -124,12 +126,12 @@ public class CRUDSQL extends Conexion {
         try {
             Connection conexion = conectar();
             st = conexion.createStatement();
-            String sql = "delete From empleado where id='"+id+"';";
+            String sql = "delete from empleado where id='"+id+"';";
             st.executeUpdate(sql);
             st.close();
             conexion.close();
             JOptionPane.showMessageDialog(null, "Se ha eliminado exitosamente","eliminado",JOptionPane.INFORMATION_MESSAGE );
-        } catch (Exception e) {
+        } catch (HeadlessException | SQLException e) {
             JOptionPane.showMessageDialog(null,"Error al eliminar","Error",JOptionPane.ERROR_MESSAGE);
         }
     }

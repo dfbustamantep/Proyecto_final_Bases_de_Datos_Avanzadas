@@ -2,6 +2,7 @@
 package SQL;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
 public class Conexion {
@@ -16,7 +17,7 @@ public class Conexion {
         try {
             Class.forName("org.postgresql.Driver");
             con = DriverManager.getConnection(url,usuario,Clave);
-        } catch (Exception e) {
+        } catch (ClassNotFoundException | SQLException e) {
             JOptionPane.showMessageDialog(null, "Error en conexion");
         }
         return con;
