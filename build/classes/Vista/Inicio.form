@@ -90,7 +90,7 @@
                       <EmptySpace min="-2" pref="200" max="-2" attributes="0"/>
                       <Component id="jLabelTitulo" min="-2" pref="228" max="-2" attributes="0"/>
                       <EmptySpace pref="192" max="32767" attributes="0"/>
-                      <Component id="jLabel1" min="-2" pref="44" max="-2" attributes="0"/>
+                      <Component id="jLabelSalir" min="-2" pref="44" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -103,7 +103,7 @@
                       <EmptySpace pref="24" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel1" min="-2" pref="25" max="-2" attributes="0"/>
+                      <Component id="jLabelSalir" min="-2" pref="25" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -122,7 +122,7 @@
                 <Property name="text" type="java.lang.String" value="BUENAUTO"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel1">
+            <Component class="javax.swing.JLabel" name="jLabelSalir">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="1"/>
@@ -133,7 +133,7 @@
                 <Property name="text" type="java.lang.String" value="    X"/>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel1MouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabelSalirMouseClicked"/>
               </Events>
             </Component>
           </SubComponents>
@@ -149,7 +149,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Realizar registro"/>
+            <Property name="text" type="java.lang.String" value="Realizar registros"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                 <LineBorder/>
@@ -161,7 +161,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="380" y="290" width="120" height="50"/>
+              <AbsoluteConstraints x="370" y="290" width="120" height="50"/>
             </Constraint>
           </Constraints>
         </Component>

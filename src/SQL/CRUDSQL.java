@@ -53,11 +53,11 @@ public class CRUDSQL extends Conexion {
         }   
     }
     
-    public void insertarVenta(String id_venta, String cantidad){
+    public void insertarVenta(String id_venta,String fecha_venta, String cantidad){
         try {
             Connection conexion = conectar();
             st = conexion.createStatement();
-            String sql = "INSERT INTO VENTA(id_venta,cantidad) VALUES('"+id_venta+"','"+cantidad+"');";
+            String sql = "INSERT INTO VENTA(id_venta,fecha_venta,cantidad) VALUES('"+id_venta+"','"+fecha_venta+"','"+cantidad+"');";
             st.execute(sql);
             st.close();
             conexion.close();

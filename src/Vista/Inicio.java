@@ -140,7 +140,7 @@ CRUDSQL objcrud = new CRUDSQL();
         jPanel16 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabelTitulo = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabelSalir = new javax.swing.JLabel();
         btnRegistro = new javax.swing.JButton();
         jLabelFecha = new javax.swing.JLabel();
         jTextTexto = new javax.swing.JTextArea();
@@ -179,12 +179,12 @@ CRUDSQL objcrud = new CRUDSQL();
         jLabelTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelTitulo.setText("BUENAUTO");
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("    X");
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabelSalir.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabelSalir.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelSalir.setText("    X");
+        jLabelSalir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel1MouseClicked(evt);
+                jLabelSalirMouseClicked(evt);
             }
         });
 
@@ -196,7 +196,7 @@ CRUDSQL objcrud = new CRUDSQL();
                 .addGap(200, 200, 200)
                 .addComponent(jLabelTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 192, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -206,7 +206,7 @@ CRUDSQL objcrud = new CRUDSQL();
                 .addComponent(jLabelTitulo)
                 .addContainerGap(24, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -215,14 +215,14 @@ CRUDSQL objcrud = new CRUDSQL();
         btnRegistro.setBackground(new java.awt.Color(0, 153, 153));
         btnRegistro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnRegistro.setForeground(new java.awt.Color(0, 0, 0));
-        btnRegistro.setText("Realizar registro");
+        btnRegistro.setText("Realizar registros");
         btnRegistro.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnRegistro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegistroActionPerformed(evt);
             }
         });
-        jPanel16.add(btnRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 290, 120, 50));
+        jPanel16.add(btnRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 290, 120, 50));
 
         jLabelFecha.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabelFecha.setForeground(new java.awt.Color(51, 51, 51));
@@ -268,10 +268,10 @@ CRUDSQL objcrud = new CRUDSQL();
         
     }//GEN-LAST:event_btnRegistroActionPerformed
 
-    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+    private void jLabelSalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelSalirMouseClicked
         JOptionPane.showMessageDialog(null,"Gracias por usar nuestro sistema\nTenga un buen día");
         System.exit(0);
-    }//GEN-LAST:event_jLabel1MouseClicked
+    }//GEN-LAST:event_jLabelSalirMouseClicked
 
     
     public static void main(String args[]) {
@@ -286,9 +286,9 @@ CRUDSQL objcrud = new CRUDSQL();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnRegistro;
     private javax.swing.JInternalFrame jInternalFrame1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabelFecha;
     private javax.swing.JLabel jLabelImagen;
+    private javax.swing.JLabel jLabelSalir;
     private javax.swing.JLabel jLabelTitulo;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel16;
