@@ -2,18 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/DBustamanteP/Documents/Proyecto_final_Bases_de_Datos_Avanzadas/src/main/Main.java</file>
-            <file>file:/C:/Users/DBustamanteP/Documents/Proyecto_final_Bases_de_Datos_Avanzadas/src/Vista/editarCliente.java</file>
-            <file>file:/C:/Users/DBustamanteP/Documents/Proyecto_final_Bases_de_Datos_Avanzadas/src/GEtset/variables.java</file>
-            <file>file:/C:/Users/DBustamanteP/Documents/Proyecto_final_Bases_de_Datos_Avanzadas/src/Vista/editarAutomotor.java</file>
-            <file>file:/C:/Users/DBustamanteP/Documents/Proyecto_final_Bases_de_Datos_Avanzadas/src/SQL/CRUDSQL.java</file>
-            <file>file:/C:/Users/DBustamanteP/Documents/Proyecto_final_Bases_de_Datos_Avanzadas/src/Vista/Inicio.java</file>
-            <file>file:/C:/Users/DBustamanteP/Documents/Proyecto_final_Bases_de_Datos_Avanzadas/src/Vista/editarSucursal.java</file>
-            <file>file:/C:/Users/DBustamanteP/Documents/Proyecto_final_Bases_de_Datos_Avanzadas/src/Vista/editarVenta.java</file>
-            <file>file:/C:/Users/DBustamanteP/Documents/Proyecto_final_Bases_de_Datos_Avanzadas/src/SQL/Conexion.java</file>
-            <file>file:/C:/Users/DBustamanteP/Documents/Proyecto_final_Bases_de_Datos_Avanzadas/src/Vista/editarEmpleado.java</file>
-            <file>file:/C:/Users/DBustamanteP/Documents/Proyecto_final_Bases_de_Datos_Avanzadas/src/Vista/Formularios.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
